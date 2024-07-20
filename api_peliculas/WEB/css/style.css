@@ -1,0 +1,7 @@
+*{
+    background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-size: 100vw;
+    background-color: blue;
+}
