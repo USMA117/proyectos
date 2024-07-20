@@ -1,7 +1,28 @@
 *{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor_principal{
     background-image: url("../img/fondo.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vh;
-    background-size: 100vw;
-    background-color: blue;
+    background-size: cover;
+    background-position: center; 
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(248, 248, 248, 0.753);
+}
+
+label{
+    font-weight: bold;
+    width: 120px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    align-items: start;
+}
+
+input{
+    padding-inline: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
