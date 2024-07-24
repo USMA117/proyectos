@@ -13,6 +13,14 @@ CREATE TABLE peliculas (
     descripcion TEXT NOT NULL
 );
 
+CREATE TABLE usuario{
+    id_usuario INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(50) NOT NULL,
+    email VARCHAR(50) NOT NULL UNIQUE,
+    user_password VARCHAR(255) NOT NULL
+}
+
+
 CREATE TABLE lista (
     id INT AUTO_INCREMENT PRIMARY KEY,
     pelicula_id INT NOT NULL,
