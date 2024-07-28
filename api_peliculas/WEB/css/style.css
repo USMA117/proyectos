@@ -1,6 +1,6 @@
 *{
     display: flex;
-    
+    justify-content: center;
 }
 
 .contenedor_principal{
@@ -9,7 +9,6 @@
     background-position: center; 
     width: 100vw;
     height: 100vh;
-    justify-content: center;
     align-items: center;
     background-color: rgba(248, 248, 248, 0.753);
 }

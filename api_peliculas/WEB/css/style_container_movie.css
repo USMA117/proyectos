@@ -1,27 +1,39 @@
-/* .container_movie{
-    background-color: aqua;
-} */
-
+*{
+    margin: 0px !important;
+    scrollbar-color: rgb(51, 50, 50) ;
+    scrollbar-width: thin;
+}
 .container_main{
     background: rgb(51, 50, 50);
 }
-
+.container_movie:hover{
+    cursor: pointer;
+}
 .name_movie{
     font-weight: 600;
-    /* margin-bottom: 0px; */
+    margin-bottom: 0px;
 }
 
 .duration_movie{
-    /* margin-top: 0px; */
+    margin-top: 0px; 
     color: rgb(99, 98, 98);
     font-weight: bold;
 }
 
 .category_movie{
+    margin-bottom: 1px; 
     background-color: rgba(19, 18, 18, 0.89);
     width: 50%;
     position: absolute;
-    top: 73%;
+    top: 281px;
     left: 103px;
     border-radius: 1px;
+}
+
+li{
+    list-style-type: none;
+}
+
+.modal{
+    padding-inline: 33%;
 }
