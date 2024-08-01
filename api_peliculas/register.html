@@ -8,11 +8,30 @@
         <link rel="stylesheet" href="./WEB/css/style.css">
     </head>
     <body>
-        <header class="bg-dark position-fixed top-0 py-3 w-100 ">
-            <h3 class="text-center text-white">REGISTER</h3>
+        <header class="row bg-dark d-flex position-fixed top-0 py-3 w-100 justify-content-start">
+            <div class="col-sm-1 col-2">
+                <a class="link-underline link-underline-opacity-0" href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+                    <p class="text-white fw-semibold">Home</p>
+                </a>
+            </div>
+            <div class="col-sm-1  col-2 mx-auto">
+                <h3 class="text-center text-white">REGISTER</h3>
+            </div>
+            <div class="col-sm-1 col-2">
+                <a class="link-offset-2 link-underline link-underline-opacity-0" href="login.html">SIGN IN</a>
+            </div>
         </header>
         <div class="contenedor_principal bg-dark">
-            
+            <div id="alert_success" class="fs-5 text-success fw-semibold position-absolute py-1 pb-0 rounded" style="width:400px; background: rgb(248, 248, 248); top:100px; display: none;">
+                <p>Successful registration</p>
+            </div>
+            <div id="alert_error" class="row fs-5 text-danger fw-semibold position-absolute py-1 pb-0 rounded" style="width:400px; background: rgb(248, 248, 248); top:100px; display: none;">
+                <p>Email is already registered</p>
+            </div>
+            <div id="alert_field_empty" class="row fs-5 text-danger fw-semibold position-absolute py-1 pb-0 rounded" style="width:400px; background: rgb(248, 248, 248); top:100px; display: none;">
+                <p>Please fill in all fields</p>
+            </div>
             <div class="row text-white py-4 rounded" style="width:400px; background: rgba(248, 248, 248, 0.753);">
                 <!-- <div class="col-12 bg-danger mt-0">
                     <h4 class="fw-bold">REGISTER</h4>
