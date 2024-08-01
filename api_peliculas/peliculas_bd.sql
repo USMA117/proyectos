@@ -13,17 +13,18 @@ CREATE TABLE peliculas (
     descripcion TEXT NOT NULL
 );
 
-CREATE TABLE usuario{
+CREATE TABLE usuario(
     id_usuario INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(50) NOT NULL,
+    nombre_usuario VARCHAR(50) NOT NULL,
     email VARCHAR(50) NOT NULL UNIQUE,
-    user_password VARCHAR(255) NOT NULL
-}
-
+    usuario_password VARCHAR(255) NOT NULL
+);
 
 CREATE TABLE lista (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    pelicula_id INT NOT NULL,
+    usuario_id INT,
+    pelicula_id INT,
+    PRIMARY KEY (usuario_id, pelicula_id),
+    FOREIGN KEY(usuario_id) REFERENCES usuario (id_usuario),
     FOREIGN KEY(pelicula_id) REFERENCES peliculas (id_pelicula)
 );
 

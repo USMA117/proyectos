@@ -18,28 +18,29 @@
                     <h4 class="fw-bold">REGISTER</h4>
                 </div> -->
                 <div class="col-12 mt-4">
-                    <form action="">
+                    <form id="form_register" action="">
                         <div class="row justify-content-start  text-center">
                             <div class="col-12 mb-3">
                                 <label for="" class="bg-danger">Username</label>
-                                <input name="username" type="text">
+                                <input id="input_username" name="username" type="text">
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="" class="label-correo bg-danger mr-0">Email address</label>
-                                <input type="email" >
+                                <input id="input_email" type="email" name="email" >
                             </div>
                             <div class="col-12 mb-3">
                                 <label for="" class="bg-danger">Password</label>
-                                <input type="password">
+                                <input id="input_password" type="password" name="usuario_password">
                             </div>
                             <div class="col-12 mt-4">
-                                <button class="btn btn-outline-danger px-5">REGISTER</button>
+                                <button class="btn btn-outline-danger px-5" type="submit">REGISTER</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        <script src="WEB/js/register.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     </body>
 </html>

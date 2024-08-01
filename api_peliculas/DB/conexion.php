@@ -4,7 +4,6 @@
     header("Access-Control-Allow-Methods: GET, POST");
     header("Access-Control-Allow-Headers: Content-Type");
 
-
     $host = "localhost";
     $database = "peliculas_bd";
     $user = "root";
